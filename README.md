@@ -25,3 +25,4 @@ react+es6+webpack+electron
 二.配置环境
   开发electron项目,package.json文件中的main属性的属性值要设置成项目的主进程(本项目中指
   的是main.js). 其他环境配置参考相关的官方教程.
+d
