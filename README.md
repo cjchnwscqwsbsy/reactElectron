@@ -6,7 +6,6 @@ react+es6+webpack+electron
     1.github远程仓库
     2.配置环境
 
-
 前提:
   计算机上已经安装git, nodejs及其它必要的软件.
 一.github远程仓库
@@ -25,4 +24,3 @@ react+es6+webpack+electron
 二.配置环境
   开发electron项目,package.json文件中的main属性的属性值要设置成项目的主进程(本项目中指
   的是main.js). 其他环境配置参考相关的官方教程.
-d
