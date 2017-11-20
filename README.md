@@ -13,7 +13,9 @@ react+es6+webpack+electron
   1.github新建一个仓库,仓库名即项目名,然后clone到本地,之后就可以直接进行git的有关操作;
   2.github上创建一个仓库, 本地新建一个项目,然后通过本地配置将项目提交至仓库:
     1>. 项目根目录打开命令行窗口,输入-- git init 进行初始化;
-    2>. 为本地项目添加远程主机-- git remote add {branchName} {https://...};
+    2>. 为本地项目添加远程主机-- git remote add remoteName 远程仓库地址;
+        本地分支关联远程分支-- git remote --set-upstream remoteName localName;
+        remoteName-- 远程仓库名(自定义)
         eg.
         git remote add helloworld https://github.com/cjchnwscqwsbsy/hello-world
         通过以上配置后就可以将项目推送至远程仓库.
