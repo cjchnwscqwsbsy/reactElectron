@@ -4,9 +4,8 @@
   "description": "react+es6+webpack+electron",
   "main": "main.js",
   "scripts": {
-    "start": "npm run devServer",
     "electron": "electron .",
-    "devServer": "webpack-dev-server --open --config webpack.dev.js",
+    "devServer": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
