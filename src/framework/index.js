@@ -3,12 +3,12 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import Home from './home';
 
 class Main extends React.Component {
     render() {
         return (
-            <App />
+            <Home />
         );
     }
 }

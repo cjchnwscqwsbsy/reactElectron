@@ -3,7 +3,7 @@
  */
 import React from 'react';
 
-class test extends React.Component {
+class Test extends React.Component {
     render() {
         return (
             <div>The first electron project</div>
@@ -11,4 +11,4 @@ class test extends React.Component {
     }
 }
 
-export default test;
+export default Test;
