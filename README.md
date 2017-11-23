@@ -6,7 +6,6 @@ react+es6+webpack+electron
     1.github远程仓库
     2.配置环境
 
-
 前提:
   计算机上已经安装git, nodejs及其它必要的软件.
 一.github远程仓库
