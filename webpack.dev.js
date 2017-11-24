@@ -22,6 +22,9 @@ module.exports = merge(common, {
             }, {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            }, {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: 'url-loader?limit=8192&name=images/[hash:8].[name].[ext]'
             }
         ]
     },

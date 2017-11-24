@@ -1,12 +1,23 @@
 @import "../../../node_modules/antd/dist/antd.css";
-.trigger {
-    font-size: 18px;
-    line-height: 64px;
-    padding: 0 16px;
-    cursor: pointer;
-    transition: color .6s;
+.main_layout {
+    background: #707070;
 }
 
-.trigger:hover {
-    color: red;
+.header_style {
+    height: 208px;
+    background: #ffffff;
+    margin: 16px 16px 0 16px;
+}
+
+.content_style {
+    min-height: 510px;
+    margin: 7px 16px;
+    padding: 24px;
+    background: #fff;
+}
+
+.footer_style {
+    height: 20px;
+    background: #ffffff;
+    margin: 0 16px 10px 16px;
 }
