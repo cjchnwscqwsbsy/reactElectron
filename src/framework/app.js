@@ -8,7 +8,7 @@ import Logo from './logo/index';
 import SiderMenu from './menus/siderMenu';
 import Home from './home/index';
 import IndexTest from './test/index';
-import './style/global.css';
+import './style/global.less';
 const { Sider } = Layout;
 
 class App extends React.Component {

@@ -1,0 +1,29 @@
+.carousel-image {
+  position: absolute;
+  width: 400%;
+  height: 208px;
+  top: 0;
+  left: 0;
+  animation: toLeft 10s linear infinite alternate;
+}
+
+.list-carousal {
+  float: left;
+  width: inherit;
+  height: 208px;
+}
+
+@keyframes toLeft {
+  0%, 5%, 10%, 15%, 20%, 25%{
+    margin-left: 0;
+  }
+  30%, 35%, 40%, 45%, 50%{
+    margin-left: -100%;
+  }
+  55%, 60%, 65%, 70%, 75%{
+    margin-left: -200%;
+  }
+  80%, 85%, 90%, 95%, 100%{
+    margin-left: -300%;
+  }
+}

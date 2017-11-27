@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import { Icon } from 'antd';
-import './logo.css';
+import './logo.less';
 class Logo extends React.Component {
     constructor(props) {
         super(props);

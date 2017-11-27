@@ -3,15 +3,29 @@
  */
 import React from 'react';
 import { Layout } from 'antd';
-import CSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import HeaderPng from '../assets/header.png';
 const { Header, Content, Footer } = Layout;
 
 class Home extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            items: []
+        }
+    }
+
     render() {
         return (
             <Layout className="main_layout">
                 <Header className="header_style">
-                    <span>VIDEO FOR FREE</span>
+                    <ReactCSSTransitionGroup
+                        transitionName="img_carousel"
+                        transitionEnterTimeout={300}
+                        transitionLeaveTimeout={300}
+                    >
+                        <img src={HeaderPng} key={1}/>
+                    </ReactCSSTransitionGroup>
                 </Header>
                 <Content className="content_style">
                     <div>
