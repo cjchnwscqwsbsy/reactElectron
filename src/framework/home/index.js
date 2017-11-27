@@ -3,29 +3,52 @@
  */
 import React from 'react';
 import { Layout } from 'antd';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import HeaderPng from '../assets/header.png';
+import CarouselForImg from '../../component/index';
+import HeaderPng from '../assets/123.jpeg';
+import Test from '../assets/456.jpeg';
+
 const { Header, Content, Footer } = Layout;
 
 class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: []
+            images: [HeaderPng, Test],
+            img: {
+                path: HeaderPng,
+                key: 0
+            }
+        }
+    }
+
+    handleClick = (imgObj) => {
+        if (imgObj.key === 0) {
+            this.setState({
+                img: {
+                    path: Test,
+                    key: 1
+                }
+            });
+        } else {
+            this.setState({
+                img: {
+                    path: HeaderPng,
+                    key: 0
+                }
+            });
         }
     }
 
     render() {
+        const { images, img } = this.state;
         return (
             <Layout className="main_layout">
                 <Header className="header_style">
-                    <ReactCSSTransitionGroup
-                        transitionName="img_carousel"
-                        transitionEnterTimeout={300}
-                        transitionLeaveTimeout={300}
-                    >
-                        <img src={HeaderPng} key={1}/>
-                    </ReactCSSTransitionGroup>
+                    <CarouselForImg
+                        images={images}
+                        img={img}
+                        changeImg={this.handleClick}
+                    />
                 </Header>
                 <Content className="content_style">
                     <div>
