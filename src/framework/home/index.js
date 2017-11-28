@@ -13,11 +13,11 @@ class Home extends React.Component {
         return (
             <Layout className="main_layout">
                 <Header className="header_style">
-                    <CarouselForImg />
+
                 </Header>
                 <Content className="content_style">
                     <div>
-                        34567890
+                        <CarouselForImg />
                     </div>
                 </Content>
                 <Footer className="footer_style" />
