@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import { Layout } from 'antd';
-import CarouselForImg from '../../component/index';
+import { CarouselForImg } from '../../component/index';
 
 const { Header, Content, Footer } = Layout;
 
@@ -18,6 +18,7 @@ class Home extends React.Component {
                 <Content className="content_style">
                     <div>
                         <CarouselForImg />
+
                     </div>
                 </Content>
                 <Footer className="footer_style" />
